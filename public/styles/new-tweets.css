@@ -13,6 +13,7 @@ button:hover {
 
 textarea {
   width: 100%;
+  resize: none;
   outline: none;
   border-top: transparent;
   border-left: transparent;
