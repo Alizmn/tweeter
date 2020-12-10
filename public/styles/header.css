@@ -1,4 +1,5 @@
 header:not(.tweets) {
+  margin-top: 120px;
   height: 400px;
   width: 100%;
   background-color: #7dccfd;
