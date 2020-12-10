@@ -15,12 +15,9 @@ textarea {
   width: 100%;
   resize: none;
   outline: none;
-  border-top: transparent;
-  border-left: transparent;
-  border-right: transparent;
+  border: transparent;
+  border-bottom: 5px solid black;
   background-color: transparent;
-  border-width: 5px;
-  border-bottom-color: black;
 }
 
 form div {

@@ -1,4 +1,4 @@
-header:not(.tweets) {
+header:not(.indiv-header) {
   margin-top: 120px;
   height: 400px;
   width: 100%;
