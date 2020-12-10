@@ -9,7 +9,6 @@ $(document).ready(() => {
     } else {
       $('form .counter').css("color", "black")
     }
-    // console.log(charCount);
   })
 })
 
