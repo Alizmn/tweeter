@@ -57,7 +57,13 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class= "new-tweet">
+        <!-- Invalid Tweet Error -->
+        
         <h2>Compose Tweet</h2>
+          <section class="error">
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Please Enter a Valid Tweet!</p>
+          </section>
         <form method= "POST" action= "/tweets/">
           <!-- <label for="tweet-text">What are you humming about?</label> -->
           <textarea placeholder="What are you humming about?" name="text" id="tweet-text"></textarea>

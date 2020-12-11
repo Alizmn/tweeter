@@ -71,7 +71,8 @@
       })
 
     } else {
-      alert("Please Enter Valid Tweet")
+      $('section.error').css('display', 'flex')
+      // alert("Please Enter Valid Tweet")
     }
   }) 
  })

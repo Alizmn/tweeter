@@ -29,3 +29,14 @@ form div {
 form output {
   font-family: 'Bungee', sans-serif;
 }
+
+/* Error dialog */
+section.error {
+  color: red;
+  font-weight: bold;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid red;
+  background-color: rgba(256, 0, 0, 0.05);
+}
