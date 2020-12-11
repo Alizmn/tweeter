@@ -47,16 +47,27 @@
       .then(res => renderTweets(res))
   }
   loadTweets()
-  // renderTweets(data);
+  // submit new tweet
   $('form').on('submit', (event) => {
     event.preventDefault();
-    $
+    const char = Number($('form .counter').val());
+    if ( char >= 0 && char !== 140) {
+      $
       .ajax({
         url: "/tweets/",
         method: "POST",
         data: $('form').serialize()
       })
-      .then(res => console.log(res))
+      .then(() => {
+        $('#tweet-text').val('')
+        $('form .counter').html('140').css("color", "black")
+        $('form button').css('background-color', '#C6C4C2')
+        $('#tweet-container').empty()
+        loadTweets()
+      })
 
-  })
+    } else {
+      alert("Please Enter Valid Tweet")
+    }
+  }) 
  })
