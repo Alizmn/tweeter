@@ -9,6 +9,9 @@
  $(document).ready(() => {
 
   const createTweetElement = (data) => {
+    let p = document.createElement('p');
+    let t = document.createTextNode(data.content['text'])
+    p.appendChild(t);
     const tweet = (`<article>
     <header class= "indiv-header">
       <div>
@@ -18,7 +21,7 @@
       <a>${data.user['handle']}</a>
     </header>
     <main class= "tweet">
-      <p>${data.content['text']}</p>
+      ${p.innerHTML}
     </main>
     <footer>
       <p>${moment(data['created_at']).fromNow()}</p>
@@ -34,6 +37,7 @@
 
   const renderTweets = (tweetArray) => {
     tweetArray.forEach(element => {
+      $('main.tweet').htm
       $('#tweet-container').append(createTweetElement(element))
     });
   }
