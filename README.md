@@ -23,3 +23,5 @@ Tweeter is a simple, single-page Twitter clone using HTML, CSS, JS, jQuery and A
 - Nodemon
 
 ## Screenshots
+!['Screenshot of Desktop view'](https://github.com/Alizmn/tweeter/blob/master/docs/homepage.png?raw=true)
+!['Screenshot of Mobile view'](https://github.com/Alizmn/tweeter/blob/master/docs/responsive.png?raw=true)
