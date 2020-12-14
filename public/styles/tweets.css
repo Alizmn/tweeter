@@ -32,6 +32,7 @@ header.indiv-header img {
 main.tweet {
   margin-left: 1%;
   margin-right: 1%;
+  padding: 1%;
   border-bottom: 5px solid black;
   word-wrap: break-word;
 }
@@ -49,5 +50,6 @@ footer div {
   display: flex;
 }
 footer div > * {
-  margin-right: 1em;
+  margin-right: 0.5rem;
+  border: transparent;
 }

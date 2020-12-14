@@ -9,6 +9,10 @@
  $(document).ready(() => {
 
   const createTweetElement = (data) => {
+    let randLike = [];
+    for (let i = 1; i <= 3; i++) {
+      (Math.random() >= 0.5) ? (randLike.push("far")) : (randLike.push("fas"))
+    }
     let p = document.createElement('p');
     let t = document.createTextNode(data.content['text'])
     p.appendChild(t);
@@ -26,9 +30,9 @@
     <footer>
       <p>${moment(data['created_at']).fromNow()}</p>
       <div>
-        <img src="https://i.imgur.com/73hZDYK.png" alt="">
-        <img src="https://i.imgur.com/73hZDYK.png" alt="">
-        <img src="https://i.imgur.com/73hZDYK.png" alt="">
+        <i class="${randLike[0]} fa-heart"></i>
+        <i class="${randLike[1]} fa-share-square" type="button"></i>
+        <i class="${randLike[2]} fa-flag" type="button"></i>
       </div>
     </footer>
   </article>`)
@@ -51,6 +55,7 @@
       .then(res => renderTweets(res))
   }
   loadTweets()
+
   // submit new tweet
   $('form').on('submit', (event) => {
     event.preventDefault();
